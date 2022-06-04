@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+body {
+  background: #f9f8fe;
+}
+
+a {
+  color: #9670f4;
 }
 
 .App-header {
@@ -15,6 +19,7 @@
 
 .App-footer {
   margin: 30px 0;
+  text-align: center;
 }
 
 .App-footer a {
