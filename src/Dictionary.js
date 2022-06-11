@@ -48,20 +48,31 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <h1>What word do you want to look up?</h1>
+          <h2 className="text-center">What word do you want to look up?</h2>
           <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              onChange={handleChange}
-              defaultValue={props.defaultKeyword}
-            />
+            <div className="row input-group">
+              <input
+                type="search"
+                className="col-9 form-control border-right-0 border"
+                onChange={handleChange}
+                defaultValue={props.defaultKeyword}
+              />
+              <div className="col-3 input-group-append">
+                <button
+                  className="btn btn-outline-secondary border-left-0 border"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
           </form>
-          <div className="hint">
+          <div className="hint text-center">
             Suggested words: sunset, wine, yoga, plant...
           </div>
         </section>
-        <Results results={results} />
         <Photos photos={photos} />
+        <Results results={results} />
       </div>
     );
   } else {

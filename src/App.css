@@ -1,9 +1,10 @@
 body {
-  background: #f9f8fe;
+  background-image: url(./background.jpg);
 }
 
 a {
-  color: #9670f4;
+  color: #6c757d;
+  font-weight: bold;
 }
 
 .App {
@@ -16,10 +17,10 @@ a {
   text-align: center;
 }
 
-.App-logo {
-  max-width: 200px;
-  display: block;
-  margin: 0 auto;
+.App h1 {
+  font-family: "pattaya", sans-serif;
+  font-size: 75px;
+  opacity: 0.8;
 }
 
 .App-footer {
@@ -29,4 +30,10 @@ a {
 
 .App-footer a {
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .App h1 {
+    font-size: 50px;
+  }
 }
